@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10251d">
+  <meta name="description" content="Toko Kelontong Fann - kebutuhan harian dengan mudah.">
+  <title>Toko Kelontong Fann</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #f5f7f5;
+      background: #0d1713;
+      line-height: 1.6;
+    }
+    header {
+      padding: 22px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #10251d;
+      border-bottom: 1px solid #294638;
+    }
+    .brand { font-size: 21px; font-weight: 800; letter-spacing: .4px; }
+    .brand span { color: #79e0a5; }
+    nav a { color: #dce9e0; text-decoration: none; margin-left: 18px; font-size: 14px; }
+    .hero {
+      padding: 76px 7% 84px;
+      background: radial-gradient(circle at 85% 15%, #285b43 0, transparent 35%), #14291f;
+    }
+    .tag {
+      display: inline-block;
+      color: #9af0bb;
+      border: 1px solid #477b5d;
+      border-radius: 30px;
+      padding: 6px 13px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    h1 { max-width: 650px; font-size: clamp(36px, 7vw, 62px); line-height: 1.08; margin: 22px 0 16px; }
+    h1 span { color: #85e6aa; }
+    .hero p { max-width: 540px; color: #c5d5ca; font-size: 17px; }
+    .button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 13px 22px;
+      background: #78dfa1;
+      color: #10251d;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 800;
+    }
+    section { padding: 55px 7%; }
+    h2 { margin: 0 0 10px; font-size: 29px; }
+    .muted { color: #aebfb4; margin-top: 0; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; margin-top: 25px; }
+    .card {
+      padding: 22px;
+      background: #172820;
+      border: 1px solid #2b4738;
+      border-radius: 15px;
+    }
+    .icon { font-size: 30px; }
+    .card h3 { margin: 10px 0 5px; }
+    .card p { margin: 0; color: #b6c7bc; font-size: 14px; }
+    .contact {
+      background: #14291f;
+      text-align: center;
+      border-top: 1px solid #294638;
+      border-bottom: 1px solid #294638;
+    }
+    footer { padding: 22px 7%; text-align: center; color: #91a599; font-size: 13px; }
+    @media (max-width: 520px) {
+      header { align-items: flex-start; gap: 12px; flex-direction: column; }
+      nav a { margin: 0 14px 0 0; }
+      .hero { padding-top: 58px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">FANN<span>STORE</span></div>
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#kategori">Kategori</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <span class="tag">SELAMAT DATANG</span>
+      <h1>Kebutuhan harian jadi lebih <span>mudah.</span></h1>
+      <p>Selamat datang di Toko Kelontong Fann. Temukan berbagai kebutuhan sehari-hari dalam satu tempat.</p>
+      <a class="button" href="#kategori">Lihat Kategori</a>
+    </section>
+
+    <section id="kategori">
+      <h2>Kategori Produk</h2>
+      <p class="muted">Pilih kategori kebutuhan yang sedang kamu cari.</p>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">🛒</div>
+          <h3>Sembako</h3>
+          <p>Berbagai kebutuhan pokok sehari-hari.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🥤</div>
+          <h3>Minuman</h3>
+          <p>Beragam pilihan minuman untuk menemani aktivitas.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🍪</div>
+          <h3>Camilan</h3>
+          <p>Aneka makanan ringan untuk waktu santai.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🧼</div>
+          <h3>Perlengkapan Rumah</h3>
+          <p>Kebutuhan kebersihan dan perlengkapan rumah.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="kontak">
+      <h2>Terima kasih sudah berkunjung!</h2>
+      <p class="muted">Informasi produk dan pemesanan dapat ditambahkan di bagian ini.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 Toko Kelontong Fann. Semua hak dilindungi.</footer>
+</body>
+</html>
